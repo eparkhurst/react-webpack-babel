@@ -1,8 +1,15 @@
 module.exports = {
-  entry: "./entry.js",
+  entry: "./src/index.js",
   output: {
+    publicPath:"/",
     path: __dirname,
     filename: "bundle.js"
+  },
+  devServer: {
+    contentBase: "./public",
+    compress: true,
+    port: 8080,
+    hot:true
   },
   module:{
     loaders:[

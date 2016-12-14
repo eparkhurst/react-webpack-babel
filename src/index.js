@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import Content from './content.js'
-import './style.css'
+import Content from './components/Content.js'
+import './index.css'
 
 class App extends React.Component {
   render() {
     return <div>
-      <h1>Suck it</h1>
+      <h1>Basic React App</h1>
       <Content />
     </div>
   }
